@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- === META === -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Team | Corvo Benefits Group LLC</title>
+  <meta name="description" content="Meet the team at Corvo Benefits Group LLC. We are dedicated Medicare specialists committed to providing honest, personalized guidance.">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#326cff">
+  <meta property="og:title" content="Meet Our Team | Corvo Benefits Group LLC">
+  <meta property="og:description" content="Dedicated Medicare specialists providing personalized guidance">
+  <meta property="og:type" content="website">
+
+  <!-- === FONTS === -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- === STYLES === -->
+  <style>
+    :root {
+      --corvo-blue: #326cff;
+      --corvo-purple: #8b5cf6;
+      --bg-dark: #050b16;
+      --bg-card: #0b1220;
+      --text-main: #f0f4f8;
+      --text-muted: #a8b2c1;
+      --border-subtle: rgba(148, 163, 184, 0.25);
+      --radius-xl: 1.5rem;
+      --shadow-soft: 0 20px 50px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.3);
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #050b16 0%, #0a0f1a 30%, #050b16 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* === LAYOUT === */
+    .page {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(50,108,255,0.25), transparent 55%),
+        radial-gradient(circle at 100% 0%, rgba(139,92,246,0.25), transparent 55%);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* === HEADER === */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(20px);
+      background: linear-gradient(to bottom, rgba(5,11,22,0.98), rgba(5,11,22,0.92), transparent);
+      border-bottom: 1px solid rgba(148,163,184,0.15);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: conic-gradient(from 210deg, var(--corvo-blue), var(--corvo-purple), var(--corvo-blue));
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 1px rgba(15,23,42,0.8), 0 12px 30px rgba(15,23,42,0.9);
+    }
+
+    .logo-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-text span:first-child {
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .logo-text span:last-child {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      position: relative;
+      padding-bottom: 2px;
+    }
+
+    .nav-links a:hover {
+      color: #e5e7eb;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--corvo-blue), var(--corvo-purple));
+      transition: width 0.2s ease-out;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      padding: 0.55rem 1.3rem;
+      border-radius: 0.6rem;
+      background: linear-gradient(135deg, var(--corvo-blue), var(--corvo-purple));
+      border: none;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      box-shadow: var(--shadow-md), 0 0 20px rgba(50,108,255,0.25);
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+      white-space: nowrap;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft), 0 0 30px rgba(50,108,255,0.35);
+    }
+
+    .nav-cta span.icon {
+      font-size: 1rem;
+    }
+
+    /* Mobile nav */
+    .nav-toggle {
+      display: none;
+      border: 1px solid rgba(148,163,184,0.6);
+      background: rgba(15,23,42,0.95);
+      border-radius: 999px;
+      padding: 0.35rem 0.65rem;
+      color: #e5e7eb;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+      .nav-links.mobile-open {
+        position: absolute;
+        inset: 100% 0 auto 0;
+        background: radial-gradient(circle at top, #020617, #020617 60%, #020617);
+        border-bottom: 1px solid rgba(148,163,184,0.25);
+        padding: 0.75rem 1.25rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .nav-links.mobile-open a {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* === SECTIONS === */
+    section {
+      padding: 2.5rem 0;
+    }
+
+    @media (min-width: 900px) {
+      section {
+        padding: 3rem 0;
+      }
+    }
+
+    .section-header {
+      margin-bottom: 2.4rem;
+      text-align: center;
+    }
+
+    .section-kicker {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 42rem;
+      line-height: 1.7;
+      margin: 0 auto;
+    }
+
+    /* === TEAM GRID === */
+    .team-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    @media (min-width: 768px) {
+      .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    /* === TEAM MEMBER CARD === */
+    .team-member {
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(11,18,32,0.95), rgba(15,23,42,0.88));
+      border: 1px solid rgba(148,163,184,0.2);
+      padding: 2rem;
+      box-shadow: var(--shadow-md);
+      backdrop-filter: blur(10px);
+      text-align: center;
+      transition: all 0.3s ease-out;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .team-member:hover {
+      transform: translateY(-4px);
+      border-color: rgba(50,108,255,0.4);
+      box-shadow: var(--shadow-soft), 0 0 30px rgba(50,108,255,0.15);
+    }
+
+    .team-avatar {
+      width: 120px;
+      height: 120px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(50,108,255,0.2), rgba(139,92,246,0.15));
+      border: 2px solid rgba(50,108,255,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+      font-size: 2.5rem;
+      box-shadow: var(--shadow-md), 0 0 20px rgba(50,108,255,0.2);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .team-avatar img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 999px;
+    }
+
+
+
+    .team-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+      background: linear-gradient(120deg, var(--corvo-blue), var(--corvo-purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.01em;
+    }
+
+    .team-role {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--corvo-blue);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.8rem;
+    }
+
+    .team-bio {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin-bottom: 1.2rem;
+    }
+
+    .team-certifications {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .certification-badge {
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      background: rgba(50,108,255,0.1);
+      border: 1px solid rgba(50,108,255,0.3);
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--corvo-blue);
+      letter-spacing: 0.01em;
+    }
+
+    /* === HERO SECTION === */
+    .team-hero {
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .team-hero {
+        padding: 4.5rem 0 3.5rem;
+      }
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-kicker-pill {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 30%, #e5e7eb, var(--corvo-blue));
+      box-shadow: 0 0 0 4px rgba(37,99,235,0.45);
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 3.5vw + 1.2rem, 3.5rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .hero-title span.gradient {
+      background: linear-gradient(120deg, var(--corvo-blue), var(--corvo-purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 42rem;
+      margin: 0 auto 1.5rem;
+      line-height: 1.7;
+      text-align: center;
+    }
+
+    /* === MAINTENANCE BANNER === */
+    .maintenance-banner {
+      background: linear-gradient(135deg, rgba(50,108,255,0.15), rgba(139,92,246,0.12));
+      border-bottom: 1px solid rgba(50,108,255,0.3);
+      padding: 1.2rem 1.25rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      position: relative;
+      z-index: 45;
+      backdrop-filter: blur(12px);
+    }
+
+    .maintenance-banner-content {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .maintenance-banner-icon {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .maintenance-banner p {
+      margin: 0;
+      letter-spacing: 0.01em;
+    }
+
+    .maintenance-banner strong {
+      color: var(--corvo-blue);
+      font-weight: 700;
+    }
+
+    /* === FOOTER === */
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.15);
+      padding: 2rem 0 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: linear-gradient(to bottom, rgba(5,11,22,0.98), rgba(5,11,22,1));
+    }
+
+    .footer-content {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-section h4 {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: #f0f4f8;
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    .footer-section ul {
+      list-style: none;
+      display: grid;
+      gap: 0.4rem;
+    }
+
+    .footer-section a {
+      color: var(--text-muted);
+      transition: color 0.2s ease-out;
+    }
+
+    .footer-section a:hover {
+      color: var(--corvo-blue);
+    }
+
+    .footer-bottom {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1.5rem 1.25rem 0;
+      border-top: 1px solid rgba(148,163,184,0.15);
+      text-align: center;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--corvo-blue);
+      color: white;
+      padding: 8px;
+      border-radius: 0 0 4px 0;
+      z-index: 100;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- === ACCESSIBILITY: SKIP LINK === -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- === MAINTENANCE BANNER === -->
+  <div class="maintenance-banner" role="alert">
+    <div class="maintenance-banner-content">
+      <span class="maintenance-banner-icon" aria-hidden="true">🔧</span>
+      <p><strong>Corvo Benefits Group LLC is not yet live.</strong> This site is currently under construction and maintenance. We will be up and operating at a future time. Thank you for your patience.</p>
+    </div>
+  </div>
+
+  <div class="page" id="team">
+    <!-- === HEADER === -->
+    <header role="banner" aria-label="Site header and main navigation">
+      <div class="nav-inner">
+        <div class="logo-wrap">
+          <div class="logo-mark" aria-label="Corvo Benefits Group logo">
+            <img src="/Photos/Updated Final Logo.png" alt="Corvo Benefits Group logo" class="logo-inner">
+          </div>
+          <div class="logo-text">
+            <span>Corvo Benefits Group</span>
+            <span>Independent Insurance Agency</span>
+          </div>
+        </div>
+
+        <nav role="navigation" aria-label="Main navigation">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+            Menu ▾
+          </button>
+          <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#plans">Medicare Plans</a>
+            <a href="index.html#contact">Contact</a>
+            <a href="index.html#legal">Disclaimers</a>
+            <button class="nav-cta" onclick="window.location.href='index.html#contact'" aria-label="Book a consultation call">
+              <span class="icon" aria-hidden="true">📅</span>
+              Book a Call
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- === MAIN CONTENT === -->
+    <main class="container" id="main-content" role="main">
+      <!-- === HERO === -->
+      <section class="team-hero">
+        <div class="hero-kicker">
+          <span class="hero-kicker-pill"></span>
+          OUR TEAM
+        </div>
+        <h1 class="hero-title">
+          Meet the <span class="gradient">specialists</span> behind Corvo.
+        </h1>
+        <p class="hero-subtitle">
+          We're a dedicated team of Medicare experts committed to helping you find coverage that fits your life. Our approach is personal, transparent, and focused entirely on your needs.
+        </p>
+      </section>
+
+      <!-- === TEAM MEMBERS === -->
+      <section id="team-members" role="region" aria-labelledby="team-heading">
+        <div class="section-header">
+          <h2 class="section-title" id="team-heading">Licensed Medicare Specialists</h2>
+          <p class="section-subtitle">
+            We combine deep Medicare expertise with genuine care for our clients. Every member of our team is licensed, certified, and committed to your success.
+          </p>
+        </div>
+
+        <div class="team-grid">
+          <!-- CEO -->
+          <div class="team-member">
+            <div class="team-avatar">
+              <img src="/Photos/Profile Pic.jpg" alt="CEO photo">
+            </div>
+            <h3 class="team-name">You</h3>
+            <div class="team-role">Founder & Chief Executive Officer</div>
+            <p class="team-bio">
+              As the founder and CEO of Corvo Benefits Group LLC, you bring years of Medicare expertise and a passion for helping beneficiaries make informed decisions. Your vision is to create an independent agency where clients come first, always.
+            </p>
+            <div class="team-certifications">
+              <span class="certification-badge">AHIP Certified</span>
+              <span class="certification-badge">Licensed Agent</span>
+              <span class="certification-badge">Medicare Specialist</span>
+            </div>
+          </div>
+
+          <!-- Agent -->
+          <div class="team-member">
+            <div class="team-avatar">🎯</div>
+            <h3 class="team-name">Dedicated Agent</h3>
+            <div class="team-role">Medicare Insurance Agent</div>
+            <p class="team-bio">
+              Our agent works closely with you to ensure every client receives personalized attention and expert guidance. With a deep commitment to transparency and client success, they're here to walk beneficiaries through every step of their Medicare journey.
+            </p>
+            <div class="team-certifications">
+              <span class="certification-badge">AHIP Certified</span>
+              <span class="certification-badge">Licensed Agent</span>
+              <span class="certification-badge">Benefit Specialist</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer role="contentinfo">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="team.html" aria-current="page">Team</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="index.html#plans">Medicare Plans</a></li>
+            <li><a href="index.html#legal">Disclaimers</a></li>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-use.html">Terms of Use</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:support@corvobenefits.com">support@corvobenefits.com</a></li>
+            <li><a href="tel:+1">(XXX) XXX-XXXX</a></li>
+            <li><a href="#">West Virginia</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Corvo Benefits Group LLC. All rights reserved. Not affiliated with the U.S. government or Medicare.</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- === NAVIGATION TOGGLE SCRIPT === -->
+  <script>
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', function() {
+      const isOpen = navLinks.classList.contains('mobile-open');
+      navLinks.classList.toggle('mobile-open');
+      navToggle.setAttribute('aria-expanded', !isOpen);
+    });
+
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      link.addEventListener('click', function() {
+        navLinks.classList.remove('mobile-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+      });
+    });
+  </script>
+</body>
+</html>

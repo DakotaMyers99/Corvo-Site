@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Corvo Benefits Group LLC</title>
+  <meta name="description" content="Privacy Policy for Corvo Benefits Group LLC - Learn how we protect your personal information and health data.">
+  <meta name="robots" content="index, follow">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --corvo-blue: #326cff;
+      --corvo-purple: #8b5cf6;
+      --bg-dark: #050b16;
+      --bg-card: #0b1220;
+      --text-main: #f0f4f8;
+      --text-muted: #a8b2c1;
+      --border-subtle: rgba(148, 163, 184, 0.25);
+      --radius-xl: 1.5rem;
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #050b16 0%, #0a0f1a 30%, #050b16 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(20px);
+      background: linear-gradient(to bottom, rgba(5,11,22,0.98), rgba(5,11,22,0.92), transparent);
+      border-bottom: 1px solid rgba(148,163,184,0.15);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: conic-gradient(from 210deg, var(--corvo-blue), var(--corvo-purple), var(--corvo-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #e5e7eb;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9rem;
+    }
+
+    .logo-text span:last-child {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    main {
+      min-height: 100vh;
+      padding: 3rem 0;
+    }
+
+    .page-header {
+      margin-bottom: 3rem;
+    }
+
+    .page-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .page-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 50rem;
+    }
+
+    .content-section {
+      margin-bottom: 2rem;
+    }
+
+    .content-section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--corvo-blue);
+      letter-spacing: -0.01em;
+    }
+
+    .content-section h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+      color: var(--text-main);
+    }
+
+    .content-section p {
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .content-section ul {
+      list-style: none;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .content-section li {
+      margin-bottom: 0.7rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .content-section li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--corvo-blue);
+      font-weight: bold;
+    }
+
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.15);
+      padding: 2rem 0 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: linear-gradient(to bottom, rgba(5,11,22,0.98), rgba(5,11,22,1));
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-main);
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      color: var(--corvo-blue);
+      font-weight: 600;
+      transition: gap 0.2s;
+    }
+
+    .back-link:hover {
+      gap: 0.8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-mark">CB</div>
+        <div class="logo-text">
+          <span>Corvo Benefits Group</span>
+          <span>Independent Insurance Agency</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="container" id="main-content" role="main">
+    <a href="index.html" class="back-link">← Back to home</a>
+
+    <div class="page-header">
+      <h1 class="page-title">Privacy Policy</h1>
+      <p class="page-subtitle">Last updated: November 2025. Your privacy is important to us. This policy explains how Corvo Benefits Group LLC collects, uses, and protects your information.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>1. Information We Collect</h2>
+      <h3>Personal Information</h3>
+      <p>When you contact us or use our services, we may collect:</p>
+      <ul>
+        <li>Full name and contact information (phone, email, mailing address)</li>
+        <li>Date of birth and Medicare eligibility information</li>
+        <li>ZIP code and geographic location</li>
+        <li>Insurance enrollment preferences and health history summaries</li>
+        <li>Prescription medication information (for plan comparison purposes only)</li>
+      </ul>
+
+      <h3>Technical Information</h3>
+      <p>We automatically collect certain technical information:</p>
+      <ul>
+        <li>Browser type and operating system</li>
+        <li>IP address and device information</li>
+        <li>Pages visited and time spent on our website</li>
+        <li>Referring website URLs</li>
+      </ul>
+
+      <p><strong>We do NOT collect:</strong> Full Social Security numbers, complete Medicare numbers, or banking information through this website. If you must share sensitive information, we recommend calling us directly rather than using online forms.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>2. How We Use Your Information</h2>
+      <p>We use the information we collect to:</p>
+      <ul>
+        <li>Provide Medicare plan consultation and enrollment services</li>
+        <li>Contact you to discuss your Medicare options and next steps</li>
+        <li>Compare available plans based on your health and coverage needs</li>
+        <li>Comply with CMS (Centers for Medicare & Medicaid Services) regulations and Agent & Broker rules</li>
+        <li>Improve our website and services</li>
+        <li>Send informational emails and educational content (only if you opt-in)</li>
+        <li>Maintain records for agent licensing and compliance purposes</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>3. Health Information & HIPAA</h2>
+      <p>When you share health information with us (such as medications or doctor names for plan comparison), we handle this information with the same privacy protections as healthcare providers. To the extent that we receive, create, or maintain protected health information (PHI), we comply with the Health Insurance Portability and Accountability Act (HIPAA) Privacy and Security Rules.</p>
+      <p>Your health information is only used to help us recommend appropriate Medicare plans and is never shared with third parties except:</p>
+      <ul>
+        <li>With your explicit consent</li>
+        <li>As required by law or CMS regulations</li>
+        <li>With the insurance carriers whose plans we are comparing for you</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>4. Information Sharing & Third Parties</h2>
+      <p><strong>We do not sell your personal information to anyone.</strong></p>
+      <p>We may share your information with:</p>
+      <ul>
+        <li><strong>Insurance Carriers:</strong> When necessary to process Medicare plan enrollment or complete your request</li>
+        <li><strong>CMS:</strong> As required by law for agent and broker compliance reporting</li>
+        <li><strong>Service Providers:</strong> Limited third parties who assist with website hosting, email delivery, and CRM services (all bound by confidentiality agreements)</li>
+        <li><strong>Legal Requirements:</strong> When required by law, court order, or government request</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>5. Data Security</h2>
+      <p>We maintain appropriate technical, administrative, and physical safeguards to protect your information from unauthorized access, alteration, or destruction. Our website uses SSL/TLS encryption for data transmitted between your browser and our servers.</p>
+      <p><strong>However, no method of transmission over the Internet is 100% secure.</strong> While we strive to protect your information, we cannot guarantee absolute security. You acknowledge the inherent risks of transmitting information over the Internet.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>6. Your Privacy Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access the personal information we hold about you</li>
+        <li>Request correction of inaccurate information</li>
+        <li>Request deletion of your information (subject to legal requirements)</li>
+        <li>Opt-out of marketing communications at any time</li>
+        <li>File a complaint with applicable privacy authorities</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at <strong>support@corvobenefits.com</strong> or call <strong>(XXX) XXX-XXXX</strong>.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>7. Cookies & Tracking</h2>
+      <p>Our website may use cookies and similar tracking technologies to enhance your user experience. Cookies are small files stored on your device that help us remember your preferences and improve site functionality. You can control cookie settings through your browser preferences.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>8. Do Not Track</h2>
+      <p>Some browsers include a "Do Not Track" feature. Because there is no industry standard for recognizing this signal, our website does not currently respond to Do Not Track requests. However, you can manage cookie and tracking preferences through your browser settings.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>9. Children's Privacy</h2>
+      <p>Our website and services are not directed to individuals under 18 years of age. We do not knowingly collect personal information from children. If we become aware that we have collected information from a child, we will delete it promptly.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>10. California & Other State Privacy Rights</h2>
+      <p>If you are a California resident, you have additional privacy rights under the California Consumer Privacy Act (CCPA). If you are a resident of another state with specific privacy laws, similar rights may apply. Please contact us for more information about your specific privacy rights.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>11. Contact & Opt-Out</h2>
+      <p><strong>To opt-out of marketing communications:</strong> Reply "STOP" to any text message, click unsubscribe on any email, or contact us directly.</p>
+      <p><strong>To request a copy of this policy or discuss privacy concerns:</strong></p>
+      <ul>
+        <li>Email: support@corvobenefits.com</li>
+        <li>Phone: (XXX) XXX-XXXX</li>
+        <li>Mail: [Your Business Address]</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>12. Policy Updates</h2>
+      <p>We may update this Privacy Policy from time to time to reflect changes in our practices, technology, legal requirements, or other factors. The "Last updated" date at the top of this policy indicates when it was last modified. Your continued use of our website and services following the posting of updated policies constitutes your acceptance of those changes.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>13. CMS Compliance Notice</h2>
+      <p>This privacy policy complies with the privacy requirements of the Centers for Medicare & Medicaid Services (CMS) for Medicare insurance agents and brokers. We are committed to protecting beneficiary privacy and maintaining compliance with all applicable federal regulations governing the collection, use, and disclosure of personal health information.</p>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.6;">
+          <strong style="color: var(--text-main); display: block; margin-bottom: 0.4rem;">CMS Compliance Notice:</strong>
+          Corvo Benefits Group LLC is authorized to market and sell Medicare products. We comply with all applicable CMS regulations, including Agent and Broker (AB) Rules.
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="index.html#legal">Disclaimers</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+          <div>
+            © <span id="year"></span> Corvo Benefits Group LLC. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

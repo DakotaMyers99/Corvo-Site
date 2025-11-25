@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- === META === -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corvo Benefits Group LLC | Medicare & Health Insurance</title>
+  <meta name="description" content="Corvo Benefits Group LLC is an independent insurance agency helping individuals understand and compare Medicare and health insurance options with honest, agent-first guidance.">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#326cff">
+  <meta property="og:title" content="Corvo Benefits Group LLC | Medicare & Health Insurance">
+  <meta property="og:description" content="Independent Medicare insurance guidance in West Virginia">
+  <meta property="og:type" content="website">
+
+  <!-- === FONTS === -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- === STYLES === -->
+  <style>
+    :root {
+      --corvo-blue: #326cff;
+      --corvo-purple: #8b5cf6;
+      --bg-dark: #050b16;
+      --bg-card: #0b1220;
+      --text-main: #f0f4f8;
+      --text-muted: #a8b2c1;
+      --border-subtle: rgba(148, 163, 184, 0.25);
+      --radius-xl: 1.5rem;
+      --shadow-soft: 0 20px 50px rgba(0, 0, 0, 0.4);
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.3);
+      --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #050b16 0%, #0a0f1a 30%, #050b16 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* === LAYOUT === */
+    .page {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(50,108,255,0.25), transparent 55%),
+        radial-gradient(circle at 100% 0%, rgba(139,92,246,0.25), transparent 55%);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* === HEADER === */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(20px);
+      background: linear-gradient(to bottom, rgba(5,11,22,0.98), rgba(5,11,22,0.92), transparent);
+      border-bottom: 1px solid rgba(148,163,184,0.15);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: conic-gradient(from 210deg, var(--corvo-blue), var(--corvo-purple), var(--corvo-blue));
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 1px rgba(15,23,42,0.8), 0 12px 30px rgba(15,23,42,0.9);
+    }
+
+    .logo-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: inherit;
+      object-fit: cover;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-text span:first-child {
+      font-weight: 600;
+      font-size: 0.95rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .logo-text span:last-child {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.9rem;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      position: relative;
+      padding-bottom: 2px;
+    }
+
+    .nav-links a:hover {
+      color: #e5e7eb;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 2px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--corvo-blue), var(--corvo-purple));
+      transition: width 0.2s ease-out;
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      padding: 0.55rem 1.3rem;
+      border-radius: 0.6rem;
+      background: linear-gradient(135deg, var(--corvo-blue), var(--corvo-purple));
+      border: none;
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      box-shadow: var(--shadow-md), 0 0 20px rgba(50,108,255,0.25);
+      cursor: pointer;
+      transition: all 0.2s ease-out;
+      white-space: nowrap;
+      letter-spacing: 0.01em;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft), 0 0 30px rgba(50,108,255,0.35);
+    }
+
+    .nav-cta span.icon {
+      font-size: 1rem;
+    }
+
+    /* Mobile nav */
+    .nav-toggle {
+      display: none;
+      border: 1px solid rgba(148,163,184,0.6);
+      background: rgba(15,23,42,0.95);
+      border-radius: 999px;
+      padding: 0.35rem 0.65rem;
+      color: #e5e7eb;
+      font-size: 0.8rem;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .nav-toggle {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+      }
+      .nav-links.mobile-open {
+        position: absolute;
+        inset: 100% 0 auto 0;
+        background: radial-gradient(circle at top, #020617, #020617 60%, #020617);
+        border-bottom: 1px solid rgba(148,163,184,0.25);
+        padding: 0.75rem 1.25rem 1.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      .nav-links.mobile-open a {
+        font-size: 0.9rem;
+      }
+    }
+
+    /* === HERO === */
+    .hero {
+      padding: 3.5rem 0 2.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .hero {
+        padding: 4.5rem 0 3.5rem;
+      }
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr);
+      gap: 2.5rem;
+    }
+
+    @media (min-width: 900px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+        align-items: center;
+      }
+    }
+
+    .hero-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-kicker-pill {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 30%, #e5e7eb, var(--corvo-blue));
+      box-shadow: 0 0 0 4px rgba(37,99,235,0.45);
+    }
+
+    .hero-title {
+      font-size: clamp(2.2rem, 3.5vw + 1.2rem, 3.5rem);
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .hero-title span.gradient {
+      background: linear-gradient(120deg, var(--corvo-blue), var(--corvo-purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 32rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-subtitle strong {
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 1.4rem;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      border-radius: 0.6rem;
+      padding: 0.75rem 1.6rem;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      border: none;
+      outline: none;
+      transition: all 0.2s ease-out;
+      letter-spacing: 0.01em;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--corvo-blue), var(--corvo-purple));
+      color: #ffffff;
+      box-shadow: var(--shadow-md), 0 0 30px rgba(50,108,255,0.3);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft), 0 0 40px rgba(50,108,255,0.4);
+    }
+
+    .btn-ghost {
+      background: rgba(148,163,184,0.08);
+      color: var(--text-main);
+      border: 1px solid rgba(148,163,184,0.3);
+    }
+
+    .btn-ghost:hover {
+      background: rgba(148,163,184,0.12);
+      border-color: rgba(148,163,184,0.5);
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .hero-meta-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.8rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.35);
+      background: radial-gradient(circle at top left, rgba(37,99,235,0.28), rgba(15,23,42,0.9));
+      box-shadow: 0 10px 28px rgba(15,23,42,0.85);
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--corvo-blue), var(--corvo-purple));
+    }
+
+    /* Hero card / pseudo "dashboard" */
+    .hero-card {
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(50,108,255,0.1), rgba(11,18,32,0.95));
+      border: 1px solid rgba(50,108,255,0.2);
+      padding: 1.6rem;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at 0% 0%, rgba(129,140,248,0.25), transparent 60%),
+        radial-gradient(circle at 90% 10%, rgba(56,189,248,0.18), transparent 55%);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .hero-card-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .hero-card-title {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+    }
+
+    .hero-card-badge {
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(15,23,42,0.8);
+      border: 1px solid rgba(148,163,184,0.6);
+      font-size: 0.7rem;
+      color: var(--text-muted);
+    }
+
+    .metrics-row {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 0.95rem;
+    }
+
+    .metric-card {
+      padding: 0.8rem 0.9rem;
+      border-radius: 0.7rem;
+      background: rgba(148,163,184,0.06);
+      border: 1px solid rgba(148,163,184,0.12);
+    }
+
+    .metric-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.01em;
+    }
+
+    .metric-value {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-main);
+    }
+
+    .metric-pill {
+      margin-top: 0.4rem;
+      font-size: 0.7rem;
+      color: var(--text-muted);
+      font-weight: 500;
+      letter-spacing: 0.01em;
+    }
+
+    .carrier-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .carrier-labels {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .carrier-logos {
+      display: flex;
+      gap: 0.4rem;
+    }
+
+    .carrier-pill {
+      padding: 0.35rem 0.75rem;
+      border-radius: 999px;
+      background: rgba(148,163,184,0.08);
+      border: 1px solid rgba(148,163,184,0.2);
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--text-main);
+      letter-spacing: 0.01em;
+    }
+
+    .disclaimer-chip {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      padding: 0.6rem 0.8rem;
+      border-radius: 0.7rem;
+      background: rgba(148,163,184,0.05);
+      border: 1px solid rgba(148,163,184,0.15);
+      line-height: 1.6;
+    }
+
+    /* === SECTIONS === */
+    section {
+      padding: 2.5rem 0;
+    }
+
+    @media (min-width: 900px) {
+      section {
+        padding: 3rem 0;
+      }
+    }
+
+    .section-header {
+      margin-bottom: 2.4rem;
+    }
+
+    .section-kicker {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+      margin-bottom: 0.3rem;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 42rem;
+      line-height: 1.7;
+    }
+
+    /* About layout */
+    .grid-2 {
+      display: grid;
+      gap: 1.6rem;
+    }
+
+    @media (min-width: 900px) {
+      .grid-2 {
+        grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+        align-items: flex-start;
+      }
+    }
+
+    .card {
+      border-radius: var(--radius-xl);
+      background: linear-gradient(135deg, rgba(11,18,32,0.95), rgba(15,23,42,0.88));
+      border: 1px solid rgba(148,163,184,0.2);
+      padding: 1.8rem;
+      box-shadow: var(--shadow-md);
+      backdrop-filter: blur(10px);
+    }
+
+    .card h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      letter-spacing: -0.01em;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.8rem;
+      line-height: 1.65;
+    }
+
+    .pill-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.7rem;
+    }
+
+    .pill {
+      padding: 0.4rem 0.85rem;
+      border-radius: 999px;
+      border: 1px solid rgba(148,163,184,0.2);
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      background: rgba(148,163,184,0.04);
+      letter-spacing: 0.01em;
+    }
+
+    /* Services / Plans */
+    .card-grid-3 {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.2rem;
+    }
+
+    @media (min-width: 768px) {
+      .card-grid-3 {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    .card-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--corvo-blue);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.01em;
+      text-transform: uppercase;
+    }
+
+    .card-tag-dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--corvo-blue), var(--corvo-purple));
+    }
+
+    .card ul {
+      list-style: none;
+      margin-top: 0.4rem;
+    }
+
+    .card li {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .bullet {
+      margin-top: 0.35rem;
+      width: 4px;
+      height: 4px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--corvo-blue), var(--corvo-purple));
+      flex-shrink: 0;
+    }
+
+    /* Contact */
+    .contact-grid {
+      display: grid;
+      gap: 1.4rem;
+    }
+
+    @media (min-width: 800px) {
+      .contact-grid {
+        grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+        align-items: flex-start;
+      }
+    }
+
+    form {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .field-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-main);
+      letter-spacing: 0.01em;
+    }
+
+    input,
+    textarea,
+    select {
+      background: rgba(15,23,42,0.6);
+      border: 1px solid rgba(148,163,184,0.2);
+      border-radius: 0.7rem;
+      padding: 0.8rem 1rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      outline: none;
+      transition: all 0.2s ease-out;
+      backdrop-filter: blur(8px);
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: rgba(148,163,184,0.5);
+    }
+
+    textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    input:focus,
+    textarea:focus,
+    select:focus {
+      border-color: var(--corvo-blue);
+      box-shadow: 0 0 0 2px rgba(50,108,255,0.2);
+      background: rgba(15,23,42,0.9);
+    }
+
+    .helper-text {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.3rem;
+      letter-spacing: 0.01em;
+    }
+
+    .contact-aside {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .contact-aside strong {
+      color: #f0f4f8;
+      font-weight: 700;
+    }
+
+    .contact-list {
+      margin-top: 0.6rem;
+      display: grid;
+      gap: 0.3rem;
+    }
+
+    .contact-item {
+      font-size: 0.9rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .contact-label {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .tpmo-box {
+      margin-top: 1rem;
+      padding: 0.9rem 1rem;
+      border-radius: 0.7rem;
+      background: rgba(148,163,184,0.05);
+      border: 1px solid rgba(148,163,184,0.15);
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .tpmo-box strong {
+      color: #f0f4f8;
+      font-weight: 700;
+    }
+
+    .tpmo-box ul li {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      display: list-item;
+    }
+
+    /* Legal / disclaimer section */
+    .legal-text {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      display: grid;
+      gap: 1.2rem;
+      line-height: 1.7;
+    }
+
+    .legal-heading {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #f0f4f8;
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.01em;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.15);
+      padding: 2rem 0 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: linear-gradient(to bottom, rgba(5,11,22,0.98), rgba(5,11,22,1));
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-links a {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .footer-links a:hover {
+      color: #e5e7eb;
+    }
+
+    /* Back to top */
+    .back-to-top {
+      position: fixed;
+      right: 1.5rem;
+      bottom: 1.5rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 0.6rem;
+      border: none;
+      background: linear-gradient(135deg, var(--corvo-blue), var(--corvo-purple));
+      color: #ffffff;
+      box-shadow: var(--shadow-md), 0 0 20px rgba(50,108,255,0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.2rem;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(8px);
+      transition: all 0.2s ease-out;
+      z-index: 40;
+      font-weight: 700;
+    }
+
+    .back-to-top:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-soft), 0 0 30px rgba(50,108,255,0.35);
+    }
+
+    /* === ACCESSIBILITY === */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--corvo-blue);
+      color: #ffffff;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      z-index: 100;
+      font-weight: 600;
+      border-radius: 0 0 0.3rem 0;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    /* === SERVICE AREA === */
+    .service-area {
+      background: linear-gradient(135deg, rgba(50,108,255,0.12), rgba(139,92,246,0.08));
+      border: 1px solid rgba(50,108,255,0.25);
+      border-radius: var(--radius-xl);
+      padding: 2.2rem 2rem;
+      box-shadow: var(--shadow-md);
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+
+    .service-area-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.18em;
+      color: var(--text-muted);
+      margin-bottom: 0.8rem;
+      font-weight: 600;
+    }
+
+    .service-area-icon {
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--corvo-blue), var(--corvo-purple));
+    }
+
+    .service-area h3 {
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      background: linear-gradient(120deg, var(--corvo-blue), var(--corvo-purple));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      letter-spacing: -0.01em;
+    }
+
+    .service-area p {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 45rem;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* === MAINTENANCE BANNER === */
+    .maintenance-banner {
+      background: linear-gradient(135deg, rgba(50,108,255,0.15), rgba(139,92,246,0.12));
+      border-bottom: 1px solid rgba(50,108,255,0.3);
+      padding: 1.2rem 1.25rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--text-main);
+      position: relative;
+      z-index: 45;
+      backdrop-filter: blur(12px);
+    }
+
+    .maintenance-banner-content {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.65rem;
+      flex-wrap: wrap;
+    }
+
+    .maintenance-banner-icon {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+
+    .maintenance-banner p {
+      margin: 0;
+      letter-spacing: 0.01em;
+    }
+
+    .maintenance-banner strong {
+      color: var(--corvo-blue);
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- === ACCESSIBILITY: SKIP LINK === -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- === MAINTENANCE BANNER === -->
+  <div class="maintenance-banner" role="alert">
+    <div class="maintenance-banner-content">
+      <span class="maintenance-banner-icon" aria-hidden="true">🔧</span>
+      <p><strong>Corvo Benefits Group LLC is not yet live.</strong> This site is currently under construction and maintenance. We will be up and operating at a future time. Thank you for your patience.</p>
+    </div>
+  </div>
+
+  <div class="page" id="home">
+    <!-- === HEADER === -->
+    <header role="banner" aria-label="Site header and main navigation">
+      <div class="nav-inner">
+        <div class="logo-wrap">
+          <div class="logo-mark" aria-label="Corvo Benefits Group logo">
+            <img src="/Photos/Updated Final Logo.png" alt="Corvo Benefits Group logo" class="logo-inner">
+          </div>
+          <div class="logo-text">
+            <span>Corvo Benefits Group</span>
+            <span>Independent Insurance Agency</span>
+          </div>
+        </div>
+
+        <nav role="navigation" aria-label="Main navigation">
+          <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks">
+            Menu ▾
+          </button>
+          <div class="nav-links" id="navLinks">
+            <a href="#about">About</a>
+            <a href="team.html">Team</a>
+            <a href="#plans">Medicare Plans</a>
+            <a href="#contact">Contact</a>
+            <a href="#legal">Disclaimers</a>
+            <button class="nav-cta" onclick="scrollToSection('contact')" aria-label="Book a consultation call">
+              <span class="icon" aria-hidden="true">📅</span>
+              Book a Call
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- === HERO === -->
+    <main class="container" id="main-content" role="main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="hero-kicker">
+              <span class="hero-kicker-pill"></span>
+              CORVO BENEFITS GROUP LLC
+            </div>
+            <h1 class="hero-title">
+              Medicare guidance that puts <span class="gradient">you</span> first.
+            </h1>
+            <p class="hero-subtitle">
+              <strong>Corvo Benefits Group LLC</strong> is an independent insurance agency helping you compare
+              <strong>Medicare & health plan options</strong> with clear explanations, honest advice, and ongoing support — not pressure.
+            </p>
+
+            <div class="hero-ctas">
+              <button class="btn-primary" onclick="scrollToSection('contact')">
+                Get started today
+                <span>➜</span>
+              </button>
+              <button class="btn-ghost" onclick="scrollToSection('plans')">
+                View Medicare options
+              </button>
+            </div>
+
+            <div class="hero-meta">
+              <div class="hero-meta-item">
+                <span class="dot"></span>
+                Licensed & AHIP-certified
+              </div>
+              <div class="hero-meta-item">
+                <span class="dot"></span>
+                No-cost consultations
+              </div>
+              <div class="hero-meta-item">
+                <span class="dot"></span>
+                Independent, agent-owned
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero pseudo-dashboard card -->
+          <aside class="hero-card" aria-label="Medicare agency snapshot">
+            <div class="hero-card-inner">
+              <div class="hero-card-header">
+                <div>
+                  <div class="hero-card-title">Coverage Snapshot</div>
+                  <div style="font-size:0.8rem;color:#e5e7eb;margin-top:0.12rem;">
+                    Personalized plan help — at no additional cost to you.
+                  </div>
+                </div>
+                <div class="hero-card-badge">
+                  2025 Plan Year
+                </div>
+              </div>
+
+              <div class="metrics-row">
+                <div class="metric-card">
+                  <div class="metric-label">Focus</div>
+                  <div class="metric-value">Medicare</div>
+                  <div class="metric-pill">Advantage · Supplements · Part D</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-label">Coverage types</div>
+                  <div class="metric-value">Multi-carrier</div>
+                  <div class="metric-pill">We shop plans for you</div>
+                </div>
+                <div class="metric-card">
+                  <div class="metric-label">Consultation cost</div>
+                  <div class="metric-value">$0</div>
+                  <div class="metric-pill">No obligation</div>
+                </div>
+              </div>
+
+              <div class="carrier-row">
+                <div class="carrier-labels">
+                  <div style="font-size:0.78rem;color:#e5e7eb;">Carriers we work with</div>
+                  <div style="font-size:0.72rem;">Varies by <span style="color:#a5b4fc;">ZIP code & county</span>.</div>
+                </div>
+                <div class="carrier-logos">
+                  <div class="carrier-pill">Medicare Advantage</div>
+                  <div class="carrier-pill">Medigap</div>
+                </div>
+              </div>
+
+              <div class="disclaimer-chip">
+                We do not offer every plan available in your area. Any information we provide is limited to the plans we
+                do offer in your area. Please contact <strong>Medicare.gov</strong> or 1-800-MEDICARE to get information
+                on all of your options.
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- === SERVICE AREA === -->
+      <section style="margin-bottom: 3rem;">
+        <div class="service-area">
+          <div class="service-area-label">
+            <span class="service-area-icon"></span>
+            Currently serving
+          </div>
+          <h3>West Virginia</h3>
+          <p>
+            We're currently focused on serving Medicare beneficiaries across West Virginia with personalized, honest guidance. As we grow, we plan to expand to additional states. If you're in WV, we'd love to help — reach out today!
+          </p>
+        </div>
+      </section>
+
+      <!-- === ABOUT === -->
+      <section id="about" role="region" aria-labelledby="about-heading">
+        <div class="section-header">
+          <div class="section-kicker">About Corvo Benefits Group LLC</div>
+          <h2 class="section-title" id="about-heading">Built by agents who actually work with Medicare every day.</h2>
+          <p class="section-subtitle">
+            You’re not just picking a plan — you’re choosing a partner. Corvo Benefits Group LLC was created to give
+            clients honest, straightforward guidance without the big-call-center feel.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Our approach</h3>
+            <p>
+              We take the time to understand your medications, doctors, budget, and priorities — then walk through plan
+              options together in plain language. You’ll always know <em>why</em> a plan is being recommended.
+            </p>
+            <p>
+              You’re never rushed, and you’re never just a “lead.” We aim to be your long-term Medicare resource, not a
+              one-time enrollment.
+            </p>
+
+            <div class="pill-row">
+              <div class="pill">One-on-one consultations</div>
+              <div class="pill">Phone & virtual appointments</div>
+              <div class="pill">Annual plan reviews</div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Who we serve</h3>
+            <p>
+              Corvo Benefits Group LLC works with:
+            </p>
+            <ul>
+              <li><span class="bullet"></span> People new to Medicare (turning 65 or newly disabled)</li>
+              <li><span class="bullet"></span> Individuals already on Medicare reviewing their coverage</li>
+              <li><span class="bullet"></span> Caregivers helping a parent or loved one compare plans</li>
+            </ul>
+            <p style="margin-top:0.5rem;">
+              <strong>Not sure where to start?</strong> Reach out, and we’ll walk you through the timeline and your next steps.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- === MEDICARE / PLANS === -->
+      <section id="plans" role="region" aria-labelledby="plans-heading">
+        <div class="section-header">
+          <div class="section-kicker">Medicare & health plan options</div>
+          <h2 class="section-title" id="plans-heading">We help you compare plans — not guess.</h2>
+          <p class="section-subtitle">
+            We work with multiple carriers so we can review benefits, premiums, and networks <em>side by side</em> and
+            help you understand what fits your situation.
+          </p>
+        </div>
+
+        <div class="card-grid-3">
+          <div class="card">
+            <div class="card-tag">
+              <span class="card-tag-dot"></span>
+              Medicare Advantage (Part C)
+            </div>
+            <h3>All-in-one Medicare coverage</h3>
+            <p>
+              Medicare Advantage plans often bundle hospital, medical, and drug coverage — sometimes with extra benefits
+              like dental, vision, or hearing.
+            </p>
+            <ul>
+              <li><span class="bullet"></span> Compare premiums, copays, and out-of-pocket limits</li>
+              <li><span class="bullet"></span> Review your doctors and hospital networks</li>
+              <li><span class="bullet"></span> Check your prescriptions for each plan</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-tag">
+              <span class="card-tag-dot"></span>
+              Medicare Supplement (Medigap)
+            </div>
+            <h3>Predictable monthly costs</h3>
+            <p>
+              Medigap policies work with Original Medicare to help pay deductibles, copays, and coinsurance.
+            </p>
+            <ul>
+              <li><span class="bullet"></span> See which letter plan (G, N, etc.) fits your needs</li>
+              <li><span class="bullet"></span> Learn how underwriting and timing work</li>
+              <li><span class="bullet"></span> Understand trade-offs vs. Medicare Advantage</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <div class="card-tag">
+              <span class="card-tag-dot"></span>
+              Part D & extras
+            </div>
+            <h3>Prescription drug coverage & more</h3>
+            <p>
+              We review standalone Part D plans and Medicare options that include built-in drug coverage.
+            </p>
+            <ul>
+              <li><span class="bullet"></span> Compare formularies & pharmacy tiers</li>
+              <li><span class="bullet"></span> Look at total yearly drug costs — not just premiums</li>
+              <li><span class="bullet"></span> Discuss dental, vision, hearing & OTC benefits (when available)</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- === CONTACT === -->
+      <section id="contact" role="region" aria-labelledby="contact-heading">
+        <div class="section-header">
+          <div class="section-kicker">Get in touch</div>
+          <h2 class="section-title" id="contact-heading">Ready to talk about your Medicare options?</h2>
+          <p class="section-subtitle">
+            Fill out the form below and we'll reach out to schedule a quick no-cost conversation. We can meet by phone
+            or virtually — whatever is easiest for you.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card">
+            <!-- TODO: Hook this form to your email service / CRM or a form handler -->
+            <form onsubmit="handleFormSubmit(event)" aria-label="Contact request form">
+              <div class="field-group">
+                <label for="name">Full name* <span style="font-weight: 400; color: var(--text-muted);">(required)</span></label>
+                <input id="name" name="name" type="text" required placeholder="Jane Doe" aria-required="true" aria-label="Full name">
+              </div>
+
+              <div class="field-group">
+                <label for="phone">Phone number* <span style="font-weight: 400; color: var(--text-muted);">(required)</span></label>
+                <input id="phone" name="phone" type="tel" required placeholder="(555) 123-4567" aria-required="true" aria-label="Phone number">
+              </div>
+
+              <div class="field-group">
+                <label for="email">Email <span style="font-weight: 400; color: var(--text-muted);">(optional)</span></label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" aria-label="Email address">
+                <div class="helper-text">We'll only use this to follow up about your request. Your information is protected under applicable privacy laws.</div>
+              </div>
+
+              <div class="field-group">
+                <label for="zip">ZIP code* <span style="font-weight: 400; color: var(--text-muted);">(required)</span></label>
+                <input id="zip" name="zip" type="text" required placeholder="Enter ZIP code" aria-required="true" aria-label="ZIP code for service area verification">
+              </div>
+
+              <div class="field-group">
+                <label for="topic">What can we help with?* <span style="font-weight: 400; color: var(--text-muted);">(required)</span></label>
+                <select id="topic" name="topic" required aria-required="true" aria-label="Topic of inquiry">
+                  <option value="">Please select</option>
+                  <option value="new-to-medicare">I'm new to Medicare</option>
+                  <option value="review-coverage">I want to review my current plan</option>
+                  <option value="part-d">Prescription drug (Part D) questions</option>
+                  <option value="caregiver">I'm helping a parent or loved one</option>
+                  <option value="other">Something else</option>
+                </select>
+              </div>
+
+              <div class="field-group">
+                <label for="message">Anything you'd like us to know? <span style="font-weight: 400; color: var(--text-muted);">(optional)</span></label>
+                <textarea id="message" name="message" placeholder="Doctors you see, medications, or questions you have. Please do not send full Medicare or Social Security numbers through this form." aria-label="Additional information or questions"></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary" style="margin-top:0.4rem;">
+                Submit request
+              </button>
+
+              <div id="formStatus" class="helper-text" style="margin-top:0.45rem;"></div>
+
+              <div class="tpmo-box">
+                <strong>Important disclosures:</strong>
+                <ul style="margin-top: 0.5rem; list-style: none; padding-left: 0;">
+                  <li style="margin-bottom: 0.3rem;">• By submitting this form, you authorize a licensed insurance agent from Corvo Benefits Group LLC to contact you by phone, email, or text to discuss Medicare plan options.</li>
+                  <li style="margin-bottom: 0.3rem;">• This is a solicitation for insurance. We may be compensated by insurance companies.</li>
+                  <li style="margin-bottom: 0.3rem;">• Do not include full Social Security numbers or complete Medicare numbers in the message field.</li>
+                  <li>• Standard message rates may apply if contacting via text.</li>
+                </ul>
+              </div>
+            </form>
+          </div>
+
+          <aside class="contact-aside">
+            <p>
+              Prefer to reach out directly? We’re happy to connect the way that works best for you.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <div class="contact-label">Phone</div>
+                <!-- TODO: Replace with your real business phone number -->
+                <div><strong>(XXX) XXX-XXXX</strong></div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-label">Email</div>
+                <!-- TODO: Replace with your real branded email -->
+                <div><strong>support@corvobenefits.com</strong></div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-label">Hours</div>
+                <div>Monday – Friday · 9:00 AM – 5:00 PM <span style="color:#64748b;">(local time)</span></div>
+              </div>
+            </div>
+
+            <p style="margin-top:0.9rem;">
+              If you’re in a Medicare enrollment window (turning 65, losing coverage, or in the Annual Enrollment Period),
+              we recommend reaching out as soon as you can so we have time to review your options together.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- === LEGAL / DISCLAIMERS === -->
+      <section id="legal" role="region" aria-labelledby="legal-heading">
+        <div class="section-header">
+          <div class="section-kicker">Important information</div>
+          <h2 class="section-title" id="legal-heading">Disclaimers & legal notices</h2>
+        </div>
+
+        <div class="card">
+          <div class="legal-text">
+            <div>
+              <div class="legal-heading">Medicare disclaimer</div>
+              <p>
+                We do not offer every plan available in your area. Any information we provide is limited to the plans
+                we do offer in your area. Please contact <strong>Medicare.gov</strong> or 1-800-MEDICARE
+                (TTY users should call 1-877-486-2048), 24 hours a day/7 days a week, or your local State Health
+                Insurance Program (SHIP) to get information on all of your options.
+              </p>
+            </div>
+
+            <div>
+              <div class="legal-heading">Not affiliated with the government</div>
+              <p>
+                Corvo Benefits Group LLC is a privately owned and operated insurance agency. We are not affiliated with
+                or endorsed by the U.S. government, the federal Medicare program, or any state government agency.
+              </p>
+            </div>
+
+            <div>
+              <div class="legal-heading">No-cost consultations</div>
+              <p>
+                There is no fee for our services. We are paid by the insurance carriers if you choose to enroll in a
+                plan through us. Your premiums are not increased by using an agent.
+              </p>
+            </div>
+
+            <div>
+              <div class="legal-heading">Information on this website</div>
+              <p>
+                Benefits and plan availability can change annually and may vary by county, ZIP code, and carrier.
+                The information on this website is intended for general education and should not be considered a complete
+                description of coverage. Plan details, provider networks, and drug formularies are subject to change.
+              </p>
+            </div>
+
+            <div>
+              <div class="legal-heading">Non-discrimination notice</div>
+              <p>
+                Corvo Benefits Group LLC complies with applicable federal civil rights laws and does not exclude, deny, or provide different services to any person on the basis of race, color, national origin, age, disability, sexual orientation, gender identity, or sex. If you believe you have been discriminated against, you may file a complaint by contacting us or by filing a written complaint with the Office for Civil Rights, U.S. Department of Health and Human Services.
+              </p>
+            </div>
+
+            <div>
+              <div class="legal-heading">Agent licensing & credentials</div>
+              <p>
+                All agents working with Corvo Benefits Group LLC are properly licensed and certified to sell Medicare products in West Virginia. We maintain compliance with all CMS Agent and Broker (AB) rules, including annual training requirements. We are bound by the Medicare Rules of Conduct to act in the best interest of beneficiaries.
+              </p>
+            </div>
+
+            <div>
+              <div class="legal-heading">Privacy & protected health information</div>
+              <p>
+                We handle any personal or health information you provide in accordance with applicable federal privacy laws, including HIPAA when applicable. Your information is never shared with third parties except as necessary to provide the services you request or as required by law. See our Privacy Policy for complete details.
+              </p>
+            </div>
+
+            <div>
+              <div class="legal-heading">Accessibility</div>
+              <p>
+                This website is designed to be accessible to people with disabilities. We comply with Web Content Accessibility Guidelines (WCAG) 2.1 Level AA standards. If you experience difficulty accessing any part of this site or have an accessibility concern, please contact us at <strong>support@corvobenefits.com</strong> or call <strong>(XXX) XXX-XXXX</strong>.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- === FOOTER === -->
+    <footer role="contentinfo" aria-label="Footer">
+      <div class="container">
+        <div class="footer-inner" style="flex-direction: column; gap: 1.2rem;">
+          <div style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.6;">
+            <strong style="color: var(--text-main); display: block; margin-bottom: 0.4rem;">CMS Compliance Notice:</strong>
+            Corvo Benefits Group LLC is authorized to market and sell Medicare products. We comply with all applicable CMS regulations, including Agent and Broker (AB) Rules. This site is intended to provide educational information only and does not constitute medical advice or a complete description of Medicare benefits.
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.75rem;">
+              <a href="privacy-policy.html" style="color: var(--text-muted); transition: color 0.2s;">Privacy Policy</a>
+              <a href="terms-of-use.html" style="color: var(--text-muted); transition: color 0.2s;">Terms of Use</a>
+              <a href="#legal" style="color: var(--text-muted); transition: color 0.2s;">Disclaimers</a>
+              <a href="#contact" style="color: var(--text-muted); transition: color 0.2s;">Contact</a>
+              <a href="https://www.medicare.gov" target="_blank" rel="noopener noreferrer" style="color: var(--text-muted); transition: color 0.2s;">Medicare.gov</a>
+            </div>
+            <div>
+              © <span id="year"></span> Corvo Benefits Group LLC. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      ↑
+    </button>
+  </div>
+
+  <!-- === SCRIPTS === -->
+  <script>
+    // Smooth scroll helper
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) {
+        const yOffset = -70; // offset for sticky header
+        const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    }
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    if (navToggle && navLinks) {
+      navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-open');
+        const isOpen = navLinks.classList.contains('mobile-open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+      });
+
+      navLinks.querySelectorAll('a, button').forEach(link => {
+        link.addEventListener('click', () => {
+          navLinks.classList.remove('mobile-open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Fake form handler - replace with real integration later
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const status = document.getElementById('formStatus');
+      if (status) {
+        status.textContent = "Thank you! Your request has been received. A licensed agent from Corvo Benefits Group LLC will reach out soon.";
+      }
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>

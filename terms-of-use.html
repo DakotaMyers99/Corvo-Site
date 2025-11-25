@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use | Corvo Benefits Group LLC</title>
+  <meta name="description" content="Terms of Use for Corvo Benefits Group LLC - Review our terms and conditions for using our website and services.">
+  <meta name="robots" content="index, follow">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --corvo-blue: #326cff;
+      --corvo-purple: #8b5cf6;
+      --bg-dark: #050b16;
+      --bg-card: #0b1220;
+      --text-main: #f0f4f8;
+      --text-muted: #a8b2c1;
+      --border-subtle: rgba(148, 163, 184, 0.25);
+      --radius-xl: 1.5rem;
+      --shadow-md: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      background: linear-gradient(180deg, #050b16 0%, #0a0f1a 30%, #050b16 100%);
+      color: var(--text-main);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(20px);
+      background: linear-gradient(to bottom, rgba(5,11,22,0.98), rgba(5,11,22,0.92), transparent);
+      border-bottom: 1px solid rgba(148,163,184,0.15);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.75rem 1.25rem;
+      max-width: 1120px;
+      margin: 0 auto;
+    }
+
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-mark {
+      width: 36px;
+      height: 36px;
+      border-radius: 999px;
+      background: conic-gradient(from 210deg, var(--corvo-blue), var(--corvo-purple), var(--corvo-blue));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: #e5e7eb;
+    }
+
+    .logo-text {
+      display: flex;
+      flex-direction: column;
+      font-size: 0.9rem;
+    }
+
+    .logo-text span:last-child {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    main {
+      min-height: 100vh;
+      padding: 3rem 0;
+    }
+
+    .page-header {
+      margin-bottom: 3rem;
+    }
+
+    .page-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.01em;
+    }
+
+    .page-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      max-width: 50rem;
+    }
+
+    .content-section {
+      margin-bottom: 2rem;
+    }
+
+    .content-section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--corvo-blue);
+      letter-spacing: -0.01em;
+    }
+
+    .content-section h3 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+      color: var(--text-main);
+    }
+
+    .content-section p {
+      color: var(--text-muted);
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+
+    .content-section ul {
+      list-style: none;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      line-height: 1.8;
+    }
+
+    .content-section li {
+      margin-bottom: 0.7rem;
+      padding-left: 1.5rem;
+      position: relative;
+    }
+
+    .content-section li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--corvo-blue);
+      font-weight: bold;
+    }
+
+    footer {
+      border-top: 1px solid rgba(148,163,184,0.15);
+      padding: 2rem 0 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      background: linear-gradient(to bottom, rgba(5,11,22,0.98), rgba(5,11,22,1));
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.75rem;
+    }
+
+    .footer-links a {
+      color: var(--text-muted);
+      transition: color 0.2s;
+    }
+
+    .footer-links a:hover {
+      color: var(--text-main);
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      color: var(--corvo-blue);
+      font-weight: 600;
+      transition: gap 0.2s;
+    }
+
+    .back-link:hover {
+      gap: 0.8rem;
+    }
+  </style>
+</head>
+
+<body>
+  <header role="banner">
+    <div class="nav-inner">
+      <a href="index.html" class="logo-wrap">
+        <div class="logo-mark">CB</div>
+        <div class="logo-text">
+          <span>Corvo Benefits Group</span>
+          <span>Independent Insurance Agency</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <main class="container" id="main-content" role="main">
+    <a href="index.html" class="back-link">← Back to home</a>
+
+    <div class="page-header">
+      <h1 class="page-title">Terms of Use</h1>
+      <p class="page-subtitle">Last updated: November 2025. These Terms of Use govern your use of the Corvo Benefits Group LLC website and services. By accessing or using our site, you agree to be bound by these terms.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing, browsing, or using this website and our services, you acknowledge that you have read, understood, and agree to be bound by these Terms of Use. If you do not agree to these terms, please do not use our website or services.</p>
+      <p>Corvo Benefits Group LLC reserves the right to modify these Terms of Use at any time. Your continued use of the website following the posting of revised terms constitutes your acceptance of those changes.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>2. Use License</h2>
+      <p>We grant you a limited, non-exclusive, non-transferable license to use this website for personal, non-commercial purposes only. This license does not include the right to:</p>
+      <ul>
+        <li>Modify or copy any content from our website</li>
+        <li>Use any content for commercial purposes or in connection with any public or private enterprise</li>
+        <li>Attempt to decompile, disassemble, or reverse engineer any software on our website</li>
+        <li>Remove or obscure any proprietary notices or labels on any materials</li>
+        <li>Transfer your license rights to any third party</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>3. Disclaimers</h2>
+      <h3>Educational Information Only</h3>
+      <p>The information on this website is provided for educational purposes only and should not be considered complete or final descriptions of Medicare benefits. Plan details, provider networks, and drug formularies are subject to change. We recommend verifying all information directly with Medicare.gov or by calling 1-800-MEDICARE.</p>
+
+      <h3>No Medical Advice</h3>
+      <p>Nothing on this website constitutes medical advice, medical diagnosis, or treatment recommendations. Always consult with your healthcare provider before making health-related decisions.</p>
+
+      <h3>As-Is Basis</h3>
+      <p>This website and all content, services, and materials are provided on an "as-is" basis without warranties of any kind, either express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>4. Limitation of Liability</h2>
+      <p>To the maximum extent permitted by law, Corvo Benefits Group LLC and its officers, directors, employees, and agents shall not be liable for any indirect, incidental, special, consequential, or punitive damages, including but not limited to damages for loss of profits, goodwill, use, data, or other intangible losses arising out of:</p>
+      <ul>
+        <li>Your use or inability to use this website</li>
+        <li>Any information or services provided through this website</li>
+        <li>Unauthorized access to or alteration of your transmissions or data</li>
+        <li>Any other matter relating to this website or our services</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>5. Intellectual Property Rights</h2>
+      <p>All content on this website, including text, graphics, logos, images, and software, is the property of Corvo Benefits Group LLC or its content suppliers and is protected by United States and international copyright laws. You may not use any content from this website without our written permission, except as permitted under this license.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>6. User Responsibilities</h2>
+      <p>You agree to:</p>
+      <ul>
+        <li>Provide accurate and complete information when submitting forms or contacting us</li>
+        <li>Not use this website for any unlawful or prohibited purpose</li>
+        <li>Not attempt to gain unauthorized access to our systems</li>
+        <li>Not transmit viruses, malware, or other harmful code</li>
+        <li>Not harass, threaten, or abuse our staff or representatives</li>
+        <li>Not engage in any activity that interferes with or disrupts the website or our services</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>7. Third-Party Links & Content</h2>
+      <p>This website may contain links to third-party websites, including Medicare.gov. These links are provided for your convenience only. Corvo Benefits Group LLC is not responsible for the content, accuracy, or policies of third-party websites. Your use of third-party websites is governed by their own terms and policies, not by these Terms of Use.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>8. Contact Form & Communications</h2>
+      <h3>Form Submission</h3>
+      <p>By submitting information through our contact form, you authorize a licensed insurance agent from Corvo Benefits Group LLC to contact you regarding Medicare plan options. This authorization applies to calls, emails, text messages, and other forms of contact.</p>
+
+      <h3>Do Not Call/Text</h3>
+      <p>By submitting this form, you acknowledge that you are not on the National Do Not Call Registry, or that you have given us express written consent to contact you despite being on such registry. You can opt-out of future communications by replying "STOP" to any text message or contacting us directly.</p>
+
+      <h3>Information Protection</h3>
+      <p>We recommend not including full Social Security numbers, complete Medicare numbers, banking information, or other sensitive personal information in online forms. If you must share sensitive information, please call us directly at (XXX) XXX-XXXX.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>9. No Guarantees</h2>
+      <p>While we strive to provide accurate, up-to-date information and reliable services, we make no guarantees regarding:</p>
+      <ul>
+        <li>Uninterrupted or error-free website access or functionality</li>
+        <li>The accuracy or completeness of plan information</li>
+        <li>Approval or enrollment in any specific Medicare plan</li>
+        <li>The results of our consultation services</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>10. CMS Compliance & Solicitation Notice</h2>
+      <p>By using this website or contacting us, you acknowledge that:</p>
+      <ul>
+        <li>This is a solicitation for insurance products and services</li>
+        <li>Corvo Benefits Group LLC may be compensated by insurance carriers if you enroll in a plan</li>
+        <li>We are licensed agents authorized by the Centers for Medicare & Medicaid Services (CMS) to market and sell Medicare products</li>
+        <li>We comply with all CMS Agent and Broker (AB) Rules</li>
+        <li>Your decision to use our services is entirely voluntary and not required to enroll in Medicare</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>11. Indemnification</h2>
+      <p>You agree to indemnify and hold harmless Corvo Benefits Group LLC, its officers, directors, employees, and agents from and against any claims, damages, losses, and expenses (including attorney's fees) arising from or related to:</p>
+      <ul>
+        <li>Your use of this website or services</li>
+        <li>Any information or data you provide</li>
+        <li>Your violation of these Terms of Use</li>
+        <li>Your violation of any applicable law or regulation</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>12. Severability</h2>
+      <p>If any portion of these Terms of Use is found to be invalid or unenforceable, that portion shall be severed, and the remaining portions shall remain in full force and effect.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>13. Governing Law</h2>
+      <p>These Terms of Use shall be governed by and construed in accordance with the laws of the State of West Virginia, without regard to its conflict of law principles. Any legal action or proceeding arising under these terms shall be brought exclusively in the state or federal courts located in West Virginia.</p>
+    </div>
+
+    <div class="content-section">
+      <h2>14. Contact Us</h2>
+      <p>If you have questions about these Terms of Use or need to report a violation, please contact us at:</p>
+      <ul>
+        <li>Email: support@corvobenefits.com</li>
+        <li>Phone: (XXX) XXX-XXXX</li>
+        <li>Mail: [Your Business Address]</li>
+      </ul>
+    </div>
+
+    <div class="content-section">
+      <h2>15. Entire Agreement</h2>
+      <p>These Terms of Use, together with our Privacy Policy and any other policies posted on this website, constitute the entire agreement between you and Corvo Benefits Group LLC regarding your use of the website and our services. These terms supersede all prior agreements and understandings.</p>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div style="font-size: 0.75rem; color: var(--text-muted); line-height: 1.6;">
+          <strong style="color: var(--text-main); display: block; margin-bottom: 0.4rem;">CMS Compliance Notice:</strong>
+          Corvo Benefits Group LLC is authorized to market and sell Medicare products. We comply with all applicable CMS regulations, including Agent and Broker (AB) Rules.
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+          <div class="footer-links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-of-use.html">Terms of Use</a>
+            <a href="index.html#legal">Disclaimers</a>
+            <a href="index.html#contact">Contact</a>
+          </div>
+          <div>
+            © <span id="year"></span> Corvo Benefits Group LLC. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
